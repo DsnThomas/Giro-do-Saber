@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sicoob_verde_escuro">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_help"
+        app:tint="#4DFFFFFF"
+        android:rotation="-20"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_gear"
+        app:tint="#4DFFFFFF"
+        android:rotation="15"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_bolt"
+        app:tint="#4DFFFFFF"
+        android:rotation="45"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTitulo"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:rotation="-5"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="GIRO DO"
+                android:textColor="@color/sicoob_verde_escuro"
+                android:textSize="36sp"
+                android:letterSpacing="0.05"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="SABER"
+                android:textColor="@color/sicoob_verde_claro"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-10dp"
+                android:rotation="-2"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_gear"
+                app:tint="#333333"
+                android:layout_gravity="end"
+                android:layout_marginEnd="24dp"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageButton
+        android:id="@+id/btnSom"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_som_on"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="INICIAR JOGO"
+        android:textColor="@color/sicoob_verde_escuro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPerguntas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPerguntas"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginBottom="12dp"
+        android:text="Gerenciar Perguntas"
+        android:textColor="@color/sicoob_verde_escuro"
+        android:backgroundTint="#E0F2F1"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPremios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPremios"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Gerenciar Prêmios"
+        android:textColor="@color/sicoob_verde_escuro"
+        android:backgroundTint="#E0F2F1"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
